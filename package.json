@@ -1,0 +1,10 @@
+{
+  "name": "JS_9_13_20261005_1009",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
