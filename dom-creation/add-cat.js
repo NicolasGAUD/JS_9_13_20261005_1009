@@ -17,4 +17,4 @@ card.appendChild(title);             // le titre dans la carte
 card.appendChild(newCat3);             // le titre dans la carte
 document.body.appendChild(card);     // la carte dans la page : tout apparaît
 
-// prepend vs appendChild
+// prepend vs appendChild //
