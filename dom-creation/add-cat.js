@@ -1,20 +1,22 @@
-const newCat = document.createElement("img");
-newCat.src = "https://placecats.com/300/202";
-newCat.alt = "Un chat roux";
-newCat.className = "card-img";
+const imgCat = document.createElement("img");
+imgCat.src="https://placecats.com/300/202";
+imgCat.alt="un chat noir";
 
 const secondCard = document.querySelector(".second-card");
-secondCard.appendChild(newCat);   // le chat apparaît, sous « Deuxième chat »
+
+secondCard.appendChild(imgCat);
 
 const card = document.createElement("div");
-const title = document.createElement("h2");
-title.textContent = "Troisième chat";
 card.className = "third-card";
-const newCat3 = document.createElement("img");
-newCat3.src = "https://placecats.com/300/203";
-newCat3.alt = "Un chat roux";
-card.appendChild(title);             // le titre dans la carte
-card.appendChild(newCat3);             // le titre dans la carte
-document.body.appendChild(card);     // la carte dans la page : tout apparaît
+const title = document.createElement("h2");
+title.className = "card-title";
+title.textContent = "troisiéme chats"
+card.appendChild(title);
+document.body.appendChild(card)
 
-// prepend vs appendChild //
+const imgCat1 = document.createElement("img");
+imgCat1.src="https://placecats.com/300/201";
+imgCat1.alt="chat";
+
+const baliseCat1 = document.querySelector(".third-card");
+baliseCat1.appendChild(imgCat1);
