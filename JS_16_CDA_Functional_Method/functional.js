@@ -136,3 +136,28 @@ console.log(expectedError);*/
 //    TypeError: Reduce of empty array with no initial value
 //at Array.reduce (<anonymous>)
 //    at Object.<anonymous> (D:\WebstormProjects\JS_9_13_20261005_1009\JS_16_CDA_Functional_Method\functional.js:125:26)
+
+
+const promoCatalogue = catalogue.map((dish) => {
+    return { ...dish, price: dish.price * 0.9 };   // un plat neuf
+});
+console.log(promoCatalogue);
+console.log(catalogue);
+
+// Mine
+// function addDish (list, dish) {
+//     list = catalogue.map((dish) => [
+//         ...dish, { name: "Churros", price: 4, inStock: true }]);
+// }
+
+//IA Corrected
+// 1. Définition de la fonction
+function addDish(list, dish) {
+    return [...list, dish];
+}
+
+// 2. Appel de la fonction avec le nouveau plat
+const newCatalogue = addDish(catalogue, { name: "Churros", price: 4, inStock: true });
+
+console.log(catalogue);
+console.log(newCatalogue);
